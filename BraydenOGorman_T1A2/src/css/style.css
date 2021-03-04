@@ -1,0 +1,39 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+div > * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: chartreuse;
+    display: flex;
+    height: 700px;
+}
+
+footer {
+    background-color: crimson;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure img {
+    width: 500px;
+}
