@@ -1,10 +1,13 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
-.cards {
-  flex-direction: row;
+body{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 nav {
@@ -13,7 +16,7 @@ nav {
   align-items: center;
   height: 100px;
   min-width: 300px;
-  width: 100%;
+  width: 100vw;
   background-color:  rgba(0, 0, 0, 0.685);
 }
 
@@ -23,13 +26,13 @@ p {
   margin-bottom: 5px;
 }
 
-ul {
+.navbar ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-decoration: none;
   list-style-type: none;
-  max-width: 600px rgba(0, 0, 0, 0.685);
+  height: 100px;
   width: 100%;
   padding-left: 0;
 }
@@ -43,26 +46,16 @@ a {
   color: white;
 }
 
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  justify-items: center;
-  background-color:  rgba(0, 0, 0, 0.685);
-  position: relative;
-  bottom: 0;
-  width: 100vw;
-  height: 100px;
-}
+
 
 .container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 100%;
-  margin: 10px;
-  height: calc( 100vh - 200px);
+  width: 100vw;
+  /* margin: 10px; */
+  height: calc( 100vh - 50px);
 }
 
 .main-img {
@@ -87,6 +80,16 @@ footer {
   max-width: 400px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  background-color:  rgba(0, 0, 0, 0.685);
+  position:relative;
+  width: 100vw;
+  height: 100px;
+}
 input[type="text"],
 select,
 textarea {
