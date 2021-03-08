@@ -54,8 +54,7 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   width: 100vw;
-  /* margin: 10px; */
-  height: calc( 100vh - 50px);
+  height: calc( 100vh - 30px);
 }
 
 .main-img {
@@ -70,6 +69,7 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
 }
 
 .main-img > img {
@@ -78,6 +78,22 @@ a {
   max-height: 100%;
   border-radius: 50%;
   max-width: 400px;
+}
+
+#project1 {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#project2 {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 footer {
@@ -125,16 +141,33 @@ address {
   background-color: #f2f2f2;
 }
 
-.contact-img {
+.project-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-card img{
   display: flex;
   margin: 0 auto;
-  width: 70%;
+  width: 100%;
   max-width: 400px;
   border-radius: 50%;
 }
 
 .contact-card {
   text-align: center;
+  padding: 10px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 20px;
+  /* height: calc( 100vh - 60px); */
+
 }
 
 .contact-info {
@@ -145,6 +178,19 @@ address {
   text-align: center;
 }
 
+.contact-form { 
+  width: 500px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc( 100vh - 60px);
+}
+
 @media screen and (min-width: 900px) {
 
 
@@ -152,6 +198,12 @@ address {
     width: 50%;
     padding-bottom: 200px;
 
+  }
+
+  .contact-content{
+    display: flex;
+    clear: both;
+    width: 100vw;
   }
 
   .container {
@@ -165,7 +217,7 @@ address {
     width: 100vw;
   }
   
-  header {
+  .home-header{
     padding-top: 200px;
   }
 
