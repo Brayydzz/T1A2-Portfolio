@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+body {
+  /* display: flex; */
+  /* flex-direction: col  umn; */
+  /* height: 100vh; */
 }
 
 nav {
@@ -17,7 +17,7 @@ nav {
   height: 100px;
   min-width: 300px;
   width: 100vw;
-  background-color:  rgba(0, 0, 0, 0.685);
+  background-color: rgb(0, 0, 0);
 }
 
 p {
@@ -46,15 +46,14 @@ a {
   color: white;
 }
 
-
-
-.container {
+main {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
   width: 100vw;
-  height: calc( 100vh - 30px);
+  padding-bottom: 75px;
+  padding-top: 75px;
 }
 
 .main-img {
@@ -72,6 +71,15 @@ a {
   padding-top: 30px;
 }
 
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .main-img > img {
   object-fit: cover;
   width: 100%;
@@ -80,32 +88,21 @@ a {
   max-width: 400px;
 }
 
-#project1 {
-  height: 300px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-#project2 {
-  height: 300px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   justify-items: center;
-  background-color:  rgba(0, 0, 0, 0.685);
-  position:relative;
+  background-color: rgba(0, 0, 0, 0.637);
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100vw;
-  height: 100px;
+  height: 75px;
 }
+
+/* Contact Page */
+
 input[type="text"],
 select,
 textarea {
@@ -141,33 +138,16 @@ address {
   background-color: #f2f2f2;
 }
 
-.project-header {
-  text-align: center;
-  padding: 20px;
-}
-
-.contact-card img{
+.contact-card img {
   display: flex;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   border-radius: 50%;
 }
 
 .contact-card {
   text-align: center;
-  padding: 10px;
-}
-
-.contact-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 20px;
-  /* height: calc( 100vh - 60px); */
-
 }
 
 .contact-info {
@@ -178,8 +158,20 @@ address {
   text-align: center;
 }
 
-.contact-form { 
-  width: 500px;
+.contact-form {
+  width: 80%;
+  max-width: 550px;
+  padding: 10px;
+}
+
+/* Project Page */
+.project-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-card p {
+  width: auto;
 }
 
 .project-content {
@@ -188,37 +180,80 @@ address {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  height: calc( 100vh - 60px);
+  justify-content: center;
+  padding-bottom: 75px;
 }
 
-@media screen and (min-width: 900px) {
+.project-card {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: underline;
+  padding: 10px;
+}
 
-
-  .content{
+@media screen and (min-width: 905px) {
+  .content {
     width: 50%;
     padding-bottom: 200px;
-
   }
 
-  .contact-content{
+  .content p {
+    padding-bottom: 70px;
+  }
+
+  .about-content {
+    width: 50%;
+    padding-bottom: 75px;
+    padding-top: 100px;
+  }
+
+  .about-content p {
+    padding-bottom: 70px;
+  }
+
+  .about-content header h1 {
+    padding-top: 75px;
+  
+  }
+
+  .contact-content {
     display: flex;
     clear: both;
     width: 100vw;
   }
 
-  .container {
+  main {
     display: flex;
     clear: both;
     width: 100vw;
+    /* padding-top: 75px; */
   }
 
   footer {
     clear: both;
     width: 100vw;
   }
-  
-  .home-header{
-    padding-top: 200px;
+
+  .home-header {
+    padding-top: 150px;
   }
 
+  .project-card {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: underline;
+    /* padding: 100px; */
+  }
+
+  .project-content { 
+    column-gap: 250px;
+    row-gap: 50px;
+  }
 }
+
