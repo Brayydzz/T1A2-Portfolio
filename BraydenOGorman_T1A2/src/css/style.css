@@ -89,6 +89,7 @@ footer img {
   height: 64px;
 }
 
+/* HOME PAGE  */
 
 .main-img {
   display: flex;
@@ -105,11 +106,14 @@ footer img {
   background-color: #fed240;
   background-clip: content-box;
   width: 80%;
+  margin-bottom: 30px;
 }
 
 .content p {
   padding: 3px;
 }
+
+/* ABOUT PAGE */
 
 .about-content {
   display: flex;
@@ -129,6 +133,12 @@ footer img {
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.btn a {
+  color: white;
 }
 
 .main-img > img {
@@ -271,7 +281,6 @@ address {
   justify-content: space-evenly;
   align-items: center;
   justify-content: center;
-  padding-bottom: 75px;
   row-gap: 50px;
 }
 
@@ -401,6 +410,7 @@ address {
   .project-content {
     column-gap: 300px;
     row-gap: 50px;
+    height: 100%;
   }
   .indv-project-content p {
     padding-left: 15px;
