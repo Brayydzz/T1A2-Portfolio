@@ -1,0 +1,168 @@
+/* NAVBAR -------------------->*/
+
+.box {
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3 ease-in-out;
+  border: 1px solid #fed240;
+
+}
+
+.box:hover {
+  border: 0;
+  box-shadow: 0 0 3px #ffe205, 0 0 7px #fed205, 0 0 20px #fed240;
+}
+
+.navbar {
+  box-shadow: 0 8px 6px -6px black;
+}
+
+/* HOME PAGE -------------------->*/
+
+.portrait-home {
+  box-shadow: 10px 10px 75px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+.content {
+  box-shadow: 5px 5px 50px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+/* ABOUT PAGE -------------------->*/
+
+.portrait-about {
+  box-shadow: 10px 10px 75px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+.about-content {
+  box-shadow: 5px 5px 50px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+/* PROJECT PAGE -------------------->*/
+
+.project-card {
+  box-shadow: 2px 2px 25px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+.project-header h1 {
+  box-shadow: 2px 2px 25px;
+  padding: 10px;
+  border-radius: 10px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+.project-img > img {
+box-shadow: 10px 10px 75px;
+animation: FadeIn ease 2s;
+-webkit-animation: FadeIn ease 2s;
+-moz-animation: FadeIn ease 2s;
+-o-animation: FadeIn ease 2s;
+-ms-animation: FadeIn ease 2s;
+}
+
+.indv-project-content {
+    box-shadow: 5px 5px 50px;
+    animation: FadeIn ease 2s;
+    -webkit-animation: FadeIn ease 2s;
+    -moz-animation: FadeIn ease 2s;
+    -o-animation: FadeIn ease 2s;
+    -ms-animation: FadeIn ease 2s;
+  }
+
+/* CONTACT PAGE  -------------------->*/
+
+.contact-image {
+  box-shadow: 10px 10px 75px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+.contact-form {
+  box-shadow: 5px 5px 50px;
+  animation: FadeIn ease 2s;
+  -webkit-animation: FadeIn ease 2s;
+  -moz-animation: FadeIn ease 2s;
+  -o-animation: FadeIn ease 2s;
+  -ms-animation: FadeIn ease 2s;
+}
+
+/* KEY FRAMES -------------------->*/
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
